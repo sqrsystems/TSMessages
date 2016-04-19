@@ -451,7 +451,7 @@ canBeDismissedByUser:(BOOL)dismissingEnabled
     CGFloat screenWidth = self.viewController.view.bounds.size.width;
     CGFloat padding = [self padding];
 
-    self.titleLabel.frame = CGRectMake(self.textSpaceLeft,
+    self.titleLabel.frame = CGRectMake(screenWidth/2 - self.titleLabel.frame.size.width/2,
                                        padding,
                                        screenWidth - padding - self.textSpaceLeft - self.textSpaceRight,
                                        0.0);
